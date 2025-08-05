@@ -1,0 +1,42 @@
+import React from 'react';
+import Data from "./fwd/Data.json";
+
+const Home = () => {
+  return (
+    <div className="container">
+      <div className="row">
+        {Data.map((item, index) => (
+          <div key={index} className="col-md-4 mb-4">
+            <div className="card h-100">
+              <img src={require(`../${item.url}`).default} className="card-img-top" alt={item.title} />
+              <div className="card-body">
+                <h5 className="card-title">{item.title}</h5>
+                <p className="card-text">Price: {item.price}</p>
+                <p className="card-text">Count: {item.count}</p>
+                <p className="card-text">{item.description}</p>
+                <button className="btn btn-warning">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Home;
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+  </div>
+</div>

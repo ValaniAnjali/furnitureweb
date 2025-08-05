@@ -1,0 +1,51 @@
+/* Contact.css */
+
+.contact {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+  }
+  
+  .content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contactInfo,
+  .contactForm {
+    flex: 1;
+  }
+  
+  .box {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .text {
+    flex: 1;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Add more styles as needed */
+  

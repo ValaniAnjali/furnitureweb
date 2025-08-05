@@ -1,0 +1,25 @@
+/* MoreImg.css
+
+//.image-row {
+  //  display: flex;
+    //justify-content: space-between; 
+    //gap: 10px; 
+  //}
+  /* MoreImg.css */
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: hidden; /* Remove horizontal scrollbar */
+  }
+  
+  .image-row img {
+    flex-basis: calc(25% - 10px);
+    max-width: 20%;
+    height: auto;
+    border: 1px solid #ddd;
+  }
+  
+
+   
