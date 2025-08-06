@@ -29,6 +29,9 @@ export default function Adminheader() {
               <li className="nav-item">
                 <Link className="nav-link" to="/allproducts">All Products</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/home">Logout</Link>
+              </li>
             </ul>
           </div>
         </div>

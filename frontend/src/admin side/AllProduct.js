@@ -6,7 +6,7 @@ export default function AllProduct() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/shopping')
+    axios.get('https://furniturewebbackend-2.onrender.com/api/shopping')
       .then((response) => {
         setProducts(response.data.data);
       })

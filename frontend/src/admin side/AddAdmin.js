@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Adminheader from './Adminheader';
 
 const AddAdmin = () => {
   // State variables to store form data
@@ -17,7 +18,7 @@ const AddAdmin = () => {
 
     try {
       // Send adminData to backend endpoint for storage
-      const response = await fetch('/api/admins', {
+      const response = await fetch('https://furniturewebbackend-2.onrender.com/api/admins', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -40,6 +41,8 @@ const AddAdmin = () => {
   };
 
   return (
+    <>
+    <Adminheader/>
     <div>
       <h2>Add Admin</h2>
       <form onSubmit={handleSubmit}>
@@ -66,6 +69,7 @@ const AddAdmin = () => {
         <button type="submit">Submit</button>
       </form>
     </div>
+    </>
   );
 };
 

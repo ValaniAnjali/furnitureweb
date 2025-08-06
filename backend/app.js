@@ -79,9 +79,7 @@ app.get("/about", middleware, (req, res) => {
   res.send("Hello about world");
 });
 
-app.get("/about", middleware, (req, res) => {
-  res.send("Hello about world");
-});
+
 
 // Serve images from the 'uploads' directory
 app.use('/uploads', express.static('uploads'));

@@ -8,7 +8,7 @@ const CustomerDetails = () => {
 
   useEffect(() => {
     // Fetch customer data from backend when the component mounts
-    fetch('http://localhost:5000/api/contact')
+    fetch('https://furniturewebbackend-2.onrender.com/api/contact')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch customer data');

@@ -23,7 +23,7 @@ const AddProduct = () => {
     const handleFetch = async () => {
         if (!productId) return alert("Enter product ID first!");
         try {
-            const res = await axios.get(`http://localhost:5000/api/shopping/${productId}`);
+            const res = await axios.get(`https://furniturewebbackend-2.onrender.com/api/shopping/${productId}`);
             const product = res.data;
 
             setTitle(product.title || '');
@@ -44,7 +44,7 @@ const AddProduct = () => {
         formData.append('count', count);
         formData.append('image', image);
 
-        axios.post('http://localhost:5000/api/shopping', formData, {
+        axios.post('https://furniturewebbackend-2.onrender.com/api/shopping', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
@@ -70,7 +70,7 @@ const AddProduct = () => {
             formData.append('image', image);
         }
 
-        axios.put(`http://localhost:5000/api/shopping/${productId}`, formData, {
+        axios.put(`https://furniturewebbackend-2.onrender.com/api/shopping/${productId}`, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
@@ -87,7 +87,7 @@ const AddProduct = () => {
 
         if (!window.confirm("Are you sure you want to delete this product?")) return;
 
-        axios.delete(`http://localhost:5000/api/shopping/${productId}`)
+        axios.delete(`https://furniturewebbackend-2.onrender.com/api/shopping/${productId}`)
             .then(res => {
                 alert("🗑️ Product deleted successfully!");
                 clearFields();

@@ -22,7 +22,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/contact', {
+      const response = await axios.post('https://furniturewebbackend-2.onrender.com/api/contact', {
         name: name,
         email: email,
         message: message

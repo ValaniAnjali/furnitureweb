@@ -132,7 +132,7 @@ const Admin = () => {
     e.preventDefault();
     
     try {
-      const response = await fetch('/api/admins/login', {
+      const response = await fetch('https://furniturewebbackend-2.onrender.com/api/admins/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

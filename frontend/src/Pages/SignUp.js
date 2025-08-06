@@ -26,7 +26,7 @@ const Signup = () => {
       return;
     }
 
-    const res = await fetch("/signin", {
+    const res = await fetch("https://furniturewebbackend-2.onrender.com/signin", {
       method: "POST",
       headers: {
         "Content-type": "application/json"
